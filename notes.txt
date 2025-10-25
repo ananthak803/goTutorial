@@ -1,0 +1,20 @@
+#go env GOPATH - gets go lang path in sys.
+#create src folder in golang path then make all your project in that folder.
+#note - to create go project anywhere else rather than go lang root folder use this command in your project folder: go mod init <project name> - creates a go.mod file which is responsible to give all resource from go.
+#go.mod contains info about your project,dependencies and version.
+#all .go files in a folder is consider to be in same package , must be in same package, to create .go file with other pkg create a new folder with pck and put .go file in that file.
+#go auto import pkg when the pkg is in use and also remove the import which is not used when saved.
+
+#var and const for variable declarations.
+#var name="abc" and var name string ="abc" both are correct , but in first one any type can be assigned and in second one only string.
+#funciton and variable name starting with uppercase can be exported and used in other files while function and variable starting with lowercase can only be used in the declared file.
+
+
+#Println - prints and ends with newline, if variable is included adds a spaced before variable auto
+#Printf - similir to printf in c no auto newline or space.
+#%T for type of variable.
+
+#fmt.Scan() - takes user input until whitespace. pass variable memory address as argument.
+#bufio package - to read string after whitespace, to read sentences.
+#make a reader first "reader:=bufio.NewReader(os.Stdin)"
+#now use reader to read "reader.ReadString('\n')" and store data in a variable
